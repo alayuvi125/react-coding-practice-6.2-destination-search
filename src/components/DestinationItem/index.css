@@ -1,0 +1,52 @@
+/* Write your CSS here */
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.image {
+  width: 40%;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.name {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto';
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .card-container {
+    width: 80%;
+  }
+
+  .image {
+    width: 30%;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+}
